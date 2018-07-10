@@ -1,12 +1,12 @@
 **Git Cheat sheet**
 
-**Generic Terms:**
-**Pull**: sync b/w local and remote repository
-**Push**: Copies from local to remote permanently
+**Generic Terms:**\
+**Pull**: sync b/w local and remote repository\
+**Push**: Copies from local to remote permanently\
 **HEAD**: Pointer to latest commit.
 
 
-**Git Configuration**:
+**Git Configuration**:\
 check either in _/etc/gitconfig_ or  _$HOME/.gitconfig_
 
 **To configure your git repository on workstation**
@@ -35,10 +35,10 @@ $ git status
 // A Filename --> Added to staging area
 
 ```
-- **Get details of a particular commit**
+- **Get details of a particular commit**\
 `$ git show commit-id  `
                  
-- **Add modified file to staging area**
+- **Add modified file to staging area**\
 `$ git add .  (or) git add filename`
 
 - **Commit Commands**
@@ -69,7 +69,7 @@ $ git log --stat
 $ gt log --grep="pattern"
 
 ```
-- **Removing untracked files from working git directory**
+- **Removing untracked files from working git directory**\
 `git clean
 `
 - **Working with remotes**
@@ -118,7 +118,7 @@ $ git revert  --> commit level --> Undo commit in a public branch
 $ git revert --> File level --> Not Applicable
 ```
 
-- **Working with Forks**
+- **Working with Forks**:\
 Keeping your forked repository in sych with the original repository 
 ```
 $ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
