@@ -86,7 +86,7 @@ $ git remote show <remote>  // e.g.  git remote show origin
 - **Working with branches**
 ```
 git checkout <branch-name> // checks out remote branch in working directory
-git checkout -b <branch-name> // create a new directory
+git checkout -b <branch-name> // create a new branch
 ```
 
 _Remember before changing branch git forces you to commit or stash any changes in working directory
@@ -127,3 +127,11 @@ $ git checkout master
 $ git merge upstream/master
 $ git push
 ```
+
+- **Shallow Clone**:\
+Fortunately, Git supports the notion of a “shallow clone”, which is a more succinctly meaningful way of describing a local repository with history truncated to a particular depth during the clone operation. By providing an argument of --depth 1 to the clone command, the process will copy only the latest revision of everything in the repository.
+```
+git clone --depth 1 repo-url
+
+```
+The above command clones only the current HEAD of the repository on GitHub, rather than every revision of every file ever committed. 
