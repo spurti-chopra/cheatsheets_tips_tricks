@@ -79,7 +79,7 @@ $ git remote add <name> <url>
 $ git branch -r  // List all remote branches
 $ git pull         //  git fetch + git merge
 $ git push <remote> <branch> // e.g. git push origin master, remember git clone automatically creates 
-                                                   // a remote connection called origin
+                             // a remote connection called origin
 $ git remote show <remote>  // e.g.  git remote show origin
 ```
 
@@ -87,6 +87,8 @@ $ git remote show <remote>  // e.g.  git remote show origin
 ```
 git checkout <branch-name> // checks out remote branch in working directory
 git checkout -b <branch-name> // create a new branch
+git branch -d <branch-name>  // deletes local branch
+git push origin --delete <branch-name> // deletes remote branch
 ```
 
 _Remember before changing branch git forces you to commit or stash any changes in working directory
