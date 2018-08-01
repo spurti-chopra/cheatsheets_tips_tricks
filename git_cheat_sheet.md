@@ -94,6 +94,12 @@ git push origin --delete <branch-name> // deletes remote branch
 _Remember before changing branch git forces you to commit or stash any changes in working directory
 When we checkout a particular commit "$ git checkout commit-id" a detached branch is created._
 
+If you are trying to "checkout" a new remote branch (that exists only on the remote, but not locally):
+```
+git fetch origin
+git checkout --track origin/<remote_branch_name>
+```
+
 -  **Resetting changes of working directory not yet shared with anyone (e.g  local commit not pushed to origin yet)**
 ```
 $ git reset HEAD --soft  --> Stage snapshot and working dir are not altered
