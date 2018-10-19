@@ -136,6 +136,15 @@ $ git merge upstream/master
 $ git push
 ```
 
+- **Keeping your feature branch up to date with master or version branch**:
+```
+$ git checkout FeatureBranch
+$ git merge origin/master (or version/branch)
+# In case conflict appears, resolve them and continue merging
+$ git --continue merge
+$ git push -u origin FeatureBranch
+```
+
 - **Shallow Clone**:\
 Fortunately, Git supports the notion of a “shallow clone”, which is a more succinctly meaningful way of describing a local repository with history truncated to a particular depth during the clone operation. By providing an argument of --depth 1 to the clone command, the process will copy only the latest revision of everything in the repository.
 ```
